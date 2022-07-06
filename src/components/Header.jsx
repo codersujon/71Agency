@@ -4,29 +4,35 @@ import Logo from '../images/logo.svg';
 import { THEME } from '../styles/theme';
 
 
-const StyleHeader = styled.header`
-    background-color: ${THEME.colors.black}
-`
+const StyleHeader = styled.section`
+
+    background-color: ${THEME.colors.black};
+
+    .wrapper{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+`;
 
 
 
 const Header = (props) => {
     return (
         <StyleHeader>
-            <header>
-                <div className="wrapper">
-                    <div className="wrapper__left">
-                        <div className="logo">
-                            <a href="">
-                                <img src={Logo} alt="SeventyOne__Logo" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="wrapper__right">
-                        
+            <div className="wrapper">
+                <div className="wrapper__left">
+                    <div className="logo">
+                        <a href="">
+                            <img src={Logo} alt="SeventyOne__Logo" />
+                        </a>
                     </div>
                 </div>
-            </header>
+                <div className="wrapper__right">
+                    
+                </div>
+            </div>
         </StyleHeader>
     );
 };

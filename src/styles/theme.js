@@ -8,5 +8,6 @@ export const THEME = {
     },
     fonts: {
         heading: "'Jost', sans-serif;",
+        body: "'Poppins', sans-serif",
     }
 }
