@@ -17,7 +17,6 @@ const StyleHeader = styled.section`
 `;
 
 
-
 const Header = (props) => {
     return (
         <StyleHeader>
