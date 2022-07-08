@@ -22,16 +22,27 @@ const StyleHeader = styled.header`
     .wrapper{
         display: felx;
         justify-content: space-between;
+        align-items: center;
 
         max-width: 1280px;
         margin: 0 auto;
         padding: 0 30px;
 
+        &__left{
+        }
+
         &__right{
             display: felx;
             & ul{
                 display: felx;
-                column-gap: 40px;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 40px;
+
+                ${media.up('lg')} {
+                    justify-content: flex-end;
+                }
+            
                 
                & a{
                 font-style: normal;
