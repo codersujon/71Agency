@@ -10,6 +10,7 @@ import Work from './pages/Work';
 import Contact from './pages/Contact';
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -18,7 +19,7 @@ root.render(
     <> 
     {/* Add Global Style */}
       <GlobalStyle/>
-
+    {/* Add React Router */}
       <Router>
           <Routes>
             <Route path="/" element={<App />}>

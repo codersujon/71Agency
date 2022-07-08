@@ -1,23 +1,15 @@
 const ROUTES =[
     {
         to: 'work',
-        name: 'Work'
+        name: 'work'
     },
     {
         to: 'services',
-        name: 'Services'
+        name: 'services'
     },
     {
         to: 'about',
-        name: 'About Us'
-    },
-    {
-        to: 'contact',
-        name: 'Contact'
-    },
-    {
-        to: 'blog',
-        name: 'Blog'
+        name: 'about us'
     }
 ];
 

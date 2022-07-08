@@ -5,20 +5,48 @@ import Logo from '../images/logo.svg';
 import { THEME } from '../styles/theme';
 import CustomNavLink from './CustomNavLink';
 import ROUTES from "../routes";
+import Button from './Button/Button';
+import { media } from '../styles/responsive';
 
 
 
-const StyleHeader = styled.section`
-
+const StyleHeader = styled.header`
+    
     background-color: ${THEME.colors.black};
+    padding: 30px 0;
+
+    ${media.up('lg')} {
+        padding: 60px 0;
+    }
 
     .wrapper{
+        display: felx;
+        justify-content: space-between;
+
         max-width: 1280px;
         margin: 0 auto;
         padding: 0 30px;
-    }
-    .active{
 
+        &__right{
+            display: felx;
+            & ul{
+                display: felx;
+                column-gap: 40px;
+                
+               & a{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 40px;
+                color: ${THEME.colors.white};
+                text-decoration: none;
+                text-transform: capitalize;
+                &.active{
+                    color: ${THEME.colors.primary}
+                }
+               }
+            }
+        }
     }
 
 `;
@@ -35,14 +63,19 @@ const Header = (props) => {
                         </Link>
                     </div>
                 </div>
+
                 <div className="wrapper__right">
                     <nav>
                         <ul>
+                            {/* looping */}
                             {ROUTES.map(link =>{
                                 return(
-                                    <CustomNavLink linkTo={link.to} linkName={link.name}/>
+                                    <CustomNavLink key={link.to} linkTo={link.to} linkName={link.name}/>
                                 )
                             })}
+                           <li>
+                                <Button to="contact" name="Contact"/>
+                           </li>
                         </ul>
                     </nav>
                 </div>
