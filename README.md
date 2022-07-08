@@ -3,11 +3,11 @@
 
 
 > ****Dependencies Packages****
-    - "react-router-dom"
-    - "react-bootstrap"
-    - "react-helmet"
-    - "styled-components"
-    - "styled-media-helper"
+    - react-router-dom
+    - react-bootstrap
+    - react-helmet
+    - styled-components
+    - styled-media-helper
 
 
 >## Features
