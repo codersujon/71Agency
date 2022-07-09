@@ -13,9 +13,6 @@ const StyledHero = styled.section`
         color: ${THEME.colors.white};
         width: 100%;
         
-        ${media.up('lg')}{
-           
-        }
     }
 
     .content{

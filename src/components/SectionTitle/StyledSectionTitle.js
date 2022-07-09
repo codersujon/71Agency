@@ -20,7 +20,7 @@ export const StyledSectionTitle = styled.div `
               font-size: 80px;
               line-height: 98px;
               margin: 0 auto 60px auto;
-              padding: 0 100px;
+              padding: 0 90px;
           }
      }
 
@@ -47,10 +47,18 @@ export const StyledSectionTitle = styled.div `
      .h3{
           font-family: ${THEME.fonts.heading};
           font-style: normal;
-          font-weight: 700;
+          font-weight: 500;
           font-size: 48px;
           line-height: 58px;
           letter-spacing: 0.68px;
      }
-`;
 
+     .h4{
+          font-family: ${THEME.fonts.heading};
+          font-style: normal;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 38px
+          letter-spacing: 0.88px;
+     }
+`;
