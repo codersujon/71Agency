@@ -68,7 +68,10 @@ export const StyledPortfolio = styled.section `
             font-size: 18px;
             font-weight: 400;
             line-height: 38px;
-            color: #5D6C74;
+            color: ${THEME.colors.paragraph};
+            text-decoration: none;
+            border-bottom: 1px solid ${THEME.colors.text};
+            padding-bottom: 6px;
         }
         ${media.up('lg')}{
             width: 100%;
