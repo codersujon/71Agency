@@ -5,6 +5,7 @@ import Description from '../Description/Description';
 import Wrapper from "../Wrapper/Wrapper";
 import PortfolioItem from './PortfolioItem';
 import { PortfolioInfo } from '../../portfolioInfo';
+import TextLink from '../Button/TextLink';
 
 
 function Portfolio(props) {
@@ -27,6 +28,9 @@ function Portfolio(props) {
                         )
                     })}
 
+                    <div className="portfolio__cta">
+                        <TextLink to="/work" name="View All Projects"/>
+                    </div>
                 </div>
             </Wrapper>
         </StyledPortfolio>

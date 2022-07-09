@@ -4,7 +4,7 @@ import { media } from "../../styles/responsive";
 
 
 export const StyledPortfolio = styled.section `
-    padding: 160px 0px 90px 0px;
+    padding: 160px 0px 0px 0px;
     
     p{
         color: ${THEME.colors.bodyText};
@@ -58,7 +58,25 @@ export const StyledPortfolio = styled.section `
             }
        }
 
+       .portfolio__cta {
+
+        text-align: center;
+        margin: 80px;
+
+        & a{
+            font-family: ${THEME.fonts.body}
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 38px;
+            color: #5D6C74;
+        }
+        ${media.up('lg')}{
+            width: 100%;
+        }
+      }
+
     }
+
 `;
 
 
