@@ -3,7 +3,7 @@ import { THEME } from "../../styles/theme";
 
 
 export const StyledPortfolio = styled.section `
-    padding: 160px 12px 90px 12px;
+    padding: 160px 0px 90px 0px;
     
     p{
         color: ${THEME.colors.bodyText};

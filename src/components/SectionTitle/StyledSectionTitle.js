@@ -34,7 +34,7 @@ export const StyledSectionTitle = styled.div `
      .h3{
           font-family: ${THEME.fonts.heading};
           font-style: normal;
-          font-weight: 500;
+          font-weight: 700;
           font-size: 48px;
           line-height: 58px;
           letter-spacing: 0.68px;

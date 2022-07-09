@@ -4,10 +4,8 @@ import SectionTitle from "../SectionTitle//SectionTitle";
 import Description from '../Description/Description';
 import Wrapper from "../Wrapper/Wrapper";
 import PortfolioItem from './PortfolioItem';
-import Portfolio1 from '../../images/portfolio/port1.jpg';
-import Portfolio2 from '../../images/portfolio/port2.jpg';
-import Portfolio3 from '../../images/portfolio/port3.jpg';
-import Portfolio4 from '../../images/portfolio/port4.jpg';
+import { PortfolioInfo } from '../../portfolioInfo';
+
 
 function Portfolio(props) {
     return (
@@ -22,26 +20,13 @@ function Portfolio(props) {
                     </Description>
                 </div>
                 <div className="portfolio-item-wrapper">
-                    <PortfolioItem 
-                        image={Portfolio1} 
-                        title="Sandbox" 
-                        para="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
-                    />
-                    <PortfolioItem 
-                        image={Portfolio2} 
-                        title="Sandbox" 
-                        para="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
-                    />
-                    <PortfolioItem 
-                        image={Portfolio3} 
-                        title="Sandbox" 
-                        para="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
-                    />
-                    <PortfolioItem 
-                        image={Portfolio4} 
-                        title="Sandbox" 
-                        para="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
-                    />  
+
+                    {PortfolioInfo.map(portfo =>{
+                        return(
+                            <PortfolioItem key={portfo.key} image={portfo.image} title={portfo.title} para={portfo.para}/>
+                        )
+                    })}
+
                 </div>
             </Wrapper>
         </StyledPortfolio>

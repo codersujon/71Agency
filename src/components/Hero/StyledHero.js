@@ -5,7 +5,7 @@ import { media } from '../../styles/responsive';
 const StyledHero = styled.section`
     background-color: ${THEME.colors.black};
     color: ${THEME.colors.white};
-    padding: 140px 12px;
+    padding: 140px 0px;
     text-align: center;
 
     .h1{
