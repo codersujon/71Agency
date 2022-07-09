@@ -11,4 +11,4 @@
  - react-bootstrap
 
 > ****Essential Tools****
- - CSS Reset: **[JoshWComeau] (https://www.joshwcomeau.com/css/custom-css-reset/)**
+ - CSS Reset: **[joshWComeau](https://www.joshwcomeau.com/css/custom-css-reset/)**
