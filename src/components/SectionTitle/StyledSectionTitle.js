@@ -9,7 +9,7 @@ export const StyledSectionTitle = styled.div `
           font-weight: 700;
           font-size: 40px;
           line-height: 50px;
-         
+          padding: 0px;
   
           ${media.up('md')} {
               font-size: 60px;
@@ -20,6 +20,7 @@ export const StyledSectionTitle = styled.div `
               font-size: 80px;
               line-height: 98px;
               margin: 0 auto 60px auto;
+              padding: 0 100px;
           }
      }
 

@@ -9,9 +9,13 @@ const StyledHero = styled.section`
     text-align: center;
 
     .h1{
-        max-width: 1049px;
         margin: 0 auto 40px auto;
         color: ${THEME.colors.white};
+        width: 100%;
+        
+        ${media.up('lg')}{
+           
+        }
     }
 
     .content{
@@ -20,18 +24,19 @@ const StyledHero = styled.section`
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
-        max-width: 667px;
         margin: 0 auto 40px auto;
 
         ${media.up('lg')}{
             font-size: 16px;
             line-height: 26px;
             margin: 0 auto 60px auto;
+            max-width: 667px;
         }
     }
 
     .seventy__cta{
         gap: 32px;
+        width: 100%;
         ${media.down('sm')} {
             div{
                 margin-left: 0;
@@ -39,7 +44,6 @@ const StyledHero = styled.section`
             a {
                 display: flex;
                 margin-bottom: 20px;
-                
             }
         }
     }
