@@ -16,7 +16,10 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: ${THEME.fonts.body};
   }
-
+  h1, h2, h3, h4, h5, h6{
+    font-family: ${THEME.fonts.heading};
+  }
+  
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;

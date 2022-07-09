@@ -1,26 +1,43 @@
 import styled from "styled-components";
 import { THEME } from "../../styles/theme";
+import { media } from "../../styles/responsive";
 
-export const StyledSectionTitle = styled.div`
-   .title{
-        font-family: ${THEME.fonts.heading};
-        font-style: normal;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 66px;
-        max-width: 660px;
-        color: ${THEME.colors.text};
-        margin-bottom: 32px
-   }
-   .content{
-        font-family: ${THEME.fonts.body};
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        margin-bottom: 90px;
-        max-width: 629px;
-        color: #5D6C74;
-   }
+export const StyledSectionTitle = styled.div `
+     .h1{
+          font-family: ${THEME.fonts.heading};
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 50px;
+         
+  
+          ${media.up('md')} {
+              font-size: 60px;
+              line-height: 98px;
+          }
+  
+          ${media.up('lg')} {
+              font-size: 80px;
+              line-height: 98px;
+              margin: 0 auto 60px auto;
+          }
+     }
 
+     .h2{
+          font-family: ${THEME.fonts.heading};
+          font-style: normal;
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 66px;
+     } 
+
+     .h3{
+          font-family: ${THEME.fonts.heading};
+          font-style: normal;
+          font-weight: 500;
+          font-size: 48px;
+          line-height: 58px;
+          letter-spacing: 0.68px;
+     }
 `;
+

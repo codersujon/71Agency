@@ -6,12 +6,13 @@ const StyledWrapper = styled.div`
     display: felx;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
     flex-wrap: wrap;
-    text-align: center;
+    
 
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
 
 `;
 
