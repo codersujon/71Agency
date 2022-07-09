@@ -5,7 +5,9 @@ import Logo from '../../images/logo.svg';
 import CustomNavLink from './CustomNavLink';
 import ROUTES from "../../routes";
 import Button from '../Button/Button';
-import StyleHeader from './StyledHeader';
+import { StyleHeader } from './StyledHeader';
+import Wrapper from '../Wrapper/Wrapper';
+
 
 
 
@@ -13,7 +15,7 @@ import StyleHeader from './StyledHeader';
 const Header = (props) => {
     return (
         <StyleHeader>
-            <div className="wrapper">
+            <Wrapper>
                 <div className="wrapper__left">
                     <div className="logo">
                         <Link to="/">
@@ -31,13 +33,13 @@ const Header = (props) => {
                                     <CustomNavLink key={link.to} linkTo={link.to} linkName={link.name}/>
                                 )
                             })}
-                           <li>
-                                <Button to="contact" name="Contact"/>
-                           </li>
+                        <li>
+                                <Button to="contact" name="Contact" variant="normal"/>
+                        </li>
                         </ul>
                     </nav>
                 </div>
-            </div>
+            </Wrapper>  
         </StyleHeader>
     );
 };

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import StyleButton from './StyleButton';
+import { StyleButton } from './StyleButton';
 
 
 
-export default function Button({to, name}) {
+export default function Button({to, name, variant}) {
     return (
-        <StyleButton>
-            <Link to={to}>{name}</Link>
+        <StyleButton className={variant}>
+            <Link to={to}>{name} </Link>
         </StyleButton>
     );
 }

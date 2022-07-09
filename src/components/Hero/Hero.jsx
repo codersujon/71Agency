@@ -1,15 +1,18 @@
 import React from 'react';
 import StyledHero from './StyledHero';
 import Button from '../Button/Button';
+import Wrapper from '../Wrapper/Wrapper';
 
 function Hero(props) {
+    //Destructuring
+    const {title, content} = props;
     return (
         <StyledHero>
-            <h1 className="title">We craft holistic, people- <br/>friendly digital experiences.</h1>
-            <p className="content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br/> officia consequat duis enim velit mollit. Exercitation veniam consequat sunt <br/> nostrud amet.</p>
+            {title ? <h1 className="title">{title}</h1> : ''}
+            {content ? <p className="content">{content}</p> : ''}
             <div className="seventy__cta">
-                <Button to="contact" name="Get a Free Quota"/>
-                <Button to="contact" name="Estiamte Project"/>
+                <Button to="contact" name="Get a Free Quota" variant="normal"/>
+                <Button to="contact" name="Estiamte Project" variant="outline"/>
             </div>
         </StyledHero>
     );
