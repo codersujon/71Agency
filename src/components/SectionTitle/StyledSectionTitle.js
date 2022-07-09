@@ -27,8 +27,20 @@ export const StyledSectionTitle = styled.div `
           font-family: ${THEME.fonts.heading};
           font-style: normal;
           font-weight: 700;
-          font-size: 56px;
-          line-height: 66px;
+          font-size: 30px;
+          line-height: 46px;
+          text-align: center;
+
+          ${media.up('md')}{
+               font-size: 38px;
+               line-height: 56px;
+          }
+
+          ${media.up('lg')}{
+               font-size: 56px;
+               line-height: 66px;
+               text-align: left;
+          }
      } 
 
      .h3{

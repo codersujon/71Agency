@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Description from '../Description/Description';
+import { media } from '../../styles/responsive';
 
 const StyledPortoflioItem =  styled.article`
     .h3{
@@ -10,6 +11,13 @@ const StyledPortoflioItem =  styled.article`
 
     .thumb {
         margin-bottom: 60px;
+        
+        ${media.down('md')}{
+            img{
+                width: 100%;
+            }
+            
+        }
     }
 `;
 

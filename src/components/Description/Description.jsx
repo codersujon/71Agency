@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { THEME } from "../../styles/theme"
+import { media } from '../../styles/responsive';
 
 
 const StyledDescription = styled.div`
@@ -9,7 +10,6 @@ const StyledDescription = styled.div`
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
-        max-width: 629px;
 
         p{
             font-family: ${THEME.fonts.body};
@@ -17,7 +17,20 @@ const StyledDescription = styled.div`
             font-weight: 400;
             font-size: 16px;
             line-height: 26px;
-            max-width: 580px;
+
+            ${media.down('md')}{
+                width: 100%;
+                text-align: center;
+                
+                & br{
+                    display: none;
+                }
+           }
+    
+            ${media.up('lg')}{
+                width: 100%;
+                max-width: 629px;
+           }
         }
 `;
 

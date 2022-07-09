@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { THEME } from "../../styles/theme";
+import { media } from "../../styles/responsive";
 
 
 export const StyledPortfolio = styled.section `
@@ -15,22 +16,49 @@ export const StyledPortfolio = styled.section `
 
     .portfolio-inner{
         width: 100%;
-        max-width: 660px;
         margin-bottom: 90px;
+
+        ${media.up('sm')}{
+            width: 100%;
+            & br{
+                display: none;
+            }
+       }
+
+        ${media.up('lg')}{
+            width: 100%;
+            max-width: 660px;
+       }
     }
 
     .portfolio-item-wrapper{
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 100px;
-
         article{
-            width: calc(50% - 50px);
-            
-
-            &:nth-child(even){
-                margin-top: 200px;
-            }
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
         }
+
+        ${media.up('md')}{
+            width: 100%;
+            text-align: center;
+        }
+
+        ${media.up('lg')}{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 100px;
+
+            article{
+                width: calc(50% - 50px);
+                text-align: left;
+    
+                &:nth-child(even){
+                    margin-top: 200px;
+                }
+            }
+       }
+
     }
 `;
+
+
