@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { THEME } from './../../styles/theme';
+import { media } from '../../styles/responsive';
 
 export const StyledQuality = styled.section`
     padding: 80px 0;
@@ -11,7 +12,7 @@ export const StyledQuality = styled.section`
         margin: 0 auto;
         text-align: center;
         margin-bottom: 90px;
-        
+
         & h2{
             margin-bottom: 14px;
             text-align: center;
@@ -27,5 +28,16 @@ export const StyledQuality = styled.section`
 
     .quality__card{
         display: flex;
+        flex-direction: column;
+
+        .card{
+            margin-bottom: 30px;
+        }
+
+        ${media.up('lg')}{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-arround;
+        }
     }
 `;

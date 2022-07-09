@@ -5,14 +5,19 @@ import Description from '../Description/Description';
 import TextLink from './../Button/TextLink';
 import RightArrow from '../../images/right-arrow.svg';
 import { THEME } from './../../styles/theme';
+import { media } from '../../styles/responsive';
 
 const StyledQualityCard =  styled.div`
     .card{
         padding: 68px 34px;
         border: 1px solid ${ THEME.colors.primary };
         border-radius: 8px;
-        margin-left: 10px;
+        
 
+        ${media.up('lg')}{
+            margin-right: 10px;
+        }
+        
         & > img{
             width: 100px;
             height: 100px;
