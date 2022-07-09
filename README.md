@@ -9,3 +9,6 @@
  - styled-media-helper
  - react-helmet
  - react-bootstrap
+
+> ****Essential Tools****
+ - CSS Reset: **[joshWComeau](https://www.joshwcomeau.com/css/custom-css-reset/)**
