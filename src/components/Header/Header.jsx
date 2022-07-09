@@ -1,15 +1,11 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import styled from 'styled-components';
 import Logo from '../../images/logo.svg';
 import CustomNavLink from './CustomNavLink';
 import ROUTES from "../../routes";
 import Button from '../Button/Button';
 import { StyleHeader } from './StyledHeader';
 import Wrapper from '../Wrapper/Wrapper';
-
-
-
 
 
 const Header = (props) => {
