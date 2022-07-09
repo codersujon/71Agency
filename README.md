@@ -12,3 +12,6 @@
 
 > ****Essential Tools****
  - CSS Reset: **[joshWComeau](https://www.joshwcomeau.com/css/custom-css-reset/)**
+
+> ****VS Code Plugin****
+ - Auto import - ES6, TS, JSX, TSX
