@@ -103,13 +103,16 @@ export const StyledFooter = styled.footer `
             display: flex;
             flex-direction: column;
             margin-bottom: 30px;
-            align-items: center;
 
             & br{
                 display: none;
             }
 
-            ${media.up('lg')} {
+            ${media.down('sm')} {
+                align-items: center;
+            }
+
+            ${media.up('md')} {
                 margin: 0;
                 
                 & br{

@@ -77,7 +77,7 @@ function Footer(props) {
                <div className="footer__copyright">
                     <p>&copy; 71 Studio 2022. All rights reserved.</p>
                </div>
-               
+
             </Wrapper>
         </StyledFooter>
     );

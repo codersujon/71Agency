@@ -1,10 +1,12 @@
 import React from 'react';
+import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import SectionTitle from '../components/SectionTitle/SectionTitle';
 
 function Contact(props) {
     return (
         <div>
-            <h1>Contact</h1>
-            <p>This is my contact page.</p>
+            <Breadcrumb title="Contact Us"/>
+            <h1>Bangladsh</h1>
         </div>
     );
 }
