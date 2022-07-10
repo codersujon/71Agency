@@ -2,7 +2,7 @@
 export const PortfolioInfo = [
     {
         key: 1,
-        image: "../images/portfolio/port1.jpg",
+        image: "/images/portfolio/port1.jpg",
         title: "Sandbox", 
         para: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
     },
